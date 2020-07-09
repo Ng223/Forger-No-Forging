@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+  <head>
+    <meta charset=”utf-8">
+    <meta name = "description" content = "This is the html file for registering a new product."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Registration</title>
+    <link rel="stylesheet" href="css/luxuryDapp.css">
+  </head>
+  <body>
+    <header>
+      <h1>Blockchain-based Anti-Counterfeit and Product Resale Solution</h1>
+      <nav id = "topNav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Owner
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content1">
+              <a href="productRegistration.html">Product Registration</a>
+              <a href="manufacturerRegistration.html">Manufacturer Registration</a>
+              <a href="checkInfoOwner.html">Check Information</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">User
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content2">
+              <a href="transact.html" class="active">Transact</a>
+              <a href="checkInfoUser.html">Check Information</a>
+            </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href=>GitHub Repo</a>
+      </nav>
+    </header>
+
+    <div id="form5_container">
+      <form id="form_ciu3" class="appnitro"  method="post" action="">
+        <div class="form_description">
+          <h2>Transact Product</h2>
+          <p>Transfer the ownership of one/multiple tokenised product to the inputted account (hex) address.</p>
+        </div>
+
+        <ul >
+          <li id="li_5_1" >
+            <label class="description" for="element_5_1">Product smart contract address</label>
+            <div>
+              <input id="element_5_1" name="element_5_1" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_5_1"><small>Enter the smart contract address of the product to transact.</small></p>
+          </li>
+          <li id="li_5_2" >
+            <label class="description" for="element_5_2">Send to</label>
+            <div>
+              <input id="element_5_2" name="element_5_2" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_5_2"><small>Enter the account address of the recipient.</small></p>
+          </li>
+          <li id="li_5_3" >
+            <label class="description" for="element_5_3">Amount of tokenized products </label>
+            <div>
+              <input id="element_5_3" name="element_5_3" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_5_3"><small>Enter the amount of tokenized products whose ownership is to be transferred.</small></p>
+          </li>
+          <li>
+            <button onclick="">Transact</button>
+          </li>
+        </ul>
+
+      </form>
+    </div>
+
+  </body>
+</html>

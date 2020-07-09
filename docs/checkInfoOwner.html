@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+  <head>
+    <meta charset=”utf-8">
+    <meta name = "description" content = "This is the html file for Anti-Counterfeit Blockchain Service for Luxury Products."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Dapp</title>
+    <link rel="stylesheet" href="css/luxuryDapp.css">
+  </head>
+  <body>
+    <header>
+      <h1>Blockchain-based Anti-Counterfeit and Product Resale Solution</h1>
+      <nav id = "topNav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Owner
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content1">
+              <a href="productRegistration.html">Product Registration</a>
+              <a href="manufacturerRegistration.html">Manufacturer Registration</a>
+              <a href="checkInfoOwner.html"  class = "active">Check Information</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">User
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content2">
+              <a href="transact.html">Transact</a>
+              <a href="checkInfoUser.html">Check Information</a>
+            </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href=>GitHub Repo</a>
+      </nav>
+    </header>
+
+    <div id="table_container_1">
+      <div class="table_description">
+        <h2>List All Products</h2>
+        <p>Displays the names and smart contract addresses of all the products in the market.</p>
+      </div>
+      <ul>
+        <li>
+          <table id="table_allProducts">
+            <tr>
+              <th>Products in the Market:</th>
+            </tr>
+          </table>
+        </li>
+        <li>
+          <button onclick="">Refresh List</button>
+        </li>
+      </ul>
+    </div>
+
+    <div id="button_container_1">
+      <div class="button_description">
+        <h2>Get Dapp Owner's (Hex) Address</h2>
+        <p>Displays the account address of dapp owner.</p>
+      </div>
+      <ul>
+        <li>
+          <button onclick="">Get Owner</button>
+        </li>
+      </ul>
+    </div>
+
+
+    <div id="form3_container">
+      <form id="form_cio1" class="appnitro"  method="post" action="">
+        <div class="form_description">
+          <h2>Get Product Information</h2>
+          <p>Displays the product's name, id, description, total supply, and manufacturer's (hex) address.</p>
+        </div>
+
+        <ul >
+          <li id="li_3_1" >
+            <label class="description" for="element_3_1">Product smart contract address</label>
+            <div>
+              <input id="element_3_1" name="element_3_1" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_3_1"><small>Enter the smart contract address of the product to get information about the product.</small></p>
+          </li>
+          <li>
+            <button onclick="">Submit</button>
+          </li>
+        </ul>
+
+      </form>
+    </div>
+
+    <div id="form4_container">
+      <form id="form_cio2" class="appnitro"  method="post" action="">
+        <div class="form_description">
+          <h2>Get Account Balance</h2>
+          <p>Displays the balance of the input (hex) address.</p>
+        </div>
+
+        <ul >
+          <li id="li_4_1" >
+            <label class="description" for="element_4_1">Enter product smart contract (hex) address</label>
+            <div>
+              <input id="element_4_1" name="element_4_1" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_4_1"><small>Enter the smart contract (hex) address of the product.</small></p>
+          </li>
+          <li>
+            <label class="description" for="element_4_2">Enter account (hex) address</label>
+            <div>
+              <input id="element_4_2" name="element_4_2" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_4_2"><small>Enter the account (hex) address to check that's account's balance.</small></p>
+          </li>
+          <li>
+            <button onclick="">Submit</button>
+          </li>
+        </ul>
+
+      </form>
+    </div>
+
+  </body>
+
+</html>
