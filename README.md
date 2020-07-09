@@ -65,6 +65,6 @@ truffle(development)> pSCInstance.transfer(ToAddress, Amount)
 ```
 
 ## Frontend Website
-I'm currently working on making a website for Forger-No-Forging Dapp. It shall make interacting with the Smart Contracts much easier. Here's a sample screenshot and you can also check out the frontend at https://github.com/Ng223/Forger-No-Forging
+I'm currently working on making a website for Forger-No-Forging Dapp. It shall make interacting with the Smart Contracts much easier. Here's a sample screenshot and you can also check out the frontend at https://ng223.github.io/Forger-No-Forging/
 ![](images/FnF.png) 
 This is just HTML and some CSS, the completed version shall be much more aesthetic :P
