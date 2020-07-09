@@ -54,13 +54,13 @@ truffle(development)> let pSCInstance = await productSC.at("0x1234...")
 ```
 `productSC` contracts facilitate three functionalities - `getProductInfo()`, `balanceOf(address)`, and `transfer(address, uint256)`. Use them as you normally would:
 ```
-truffle(development)> pSCInstance.getProductInfo()
+truffle(development)> pSCInstance.getProductInfo({from:})
 <returns details about the tokenized product>
 
-truffle(development)> pSCInstance.balanceOf(EntityAddress)
+truffle(development)> pSCInstance.balanceOf(EntityAddress,{from:})
 <returns the amount of tokens (product) that the entity owns, whose address is passed as an argument to the function>
 
-truffle(development)> pSCInstance.transfer(ToAddress, Amount)
+truffle(development)> pSCInstance.transfer(ToAddress, Amount,{from:})
 <transfers the ownership of tokenized products to the address specified as an argument>
 ```
 
