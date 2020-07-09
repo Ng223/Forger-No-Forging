@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+  <head>
+    <meta charset=”utf-8">
+    <meta name = "description" content = "This is the html file for registering a new product."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Registration</title>
+    <link rel="stylesheet" href="css/luxuryDapp.css">
+  </head>
+  <body>
+    <header>
+      <h1>Blockchain-based Anti-Counterfeit and Product Resale Solution</h1>
+      <nav id = "topNav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Owner
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content1">
+              <a href="productRegistration.html" class = "active">Product Registration</a>
+              <a href="manufacturerRegistration.html">Manufacturer Registration</a>
+              <a href="checkInfoOwner.html">Check Information</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">User
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content2">
+              <a href="transact.html">Transact</a>
+              <a href="checkInfoUser.html">Check Information</a>
+            </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href=>GitHub Repo</a>
+      </nav>
+    </header>
+
+    <div id="form1_container">
+  		<form id="form_product" class="appnitro"  method="post" action="">
+  			<div class="form_description">
+          <h2>Product Registration Form</h2>
+          <p>Fill in the information to create a smart contract and tokenize a new product.</p>
+        </div>
+
+        <ul >
+          <li id="li_1_1" >
+            <label class="description" for="element_1_1">Product Name </label>
+            <div>
+              <input id="element_1_1" name="element_1_1" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_1_1"><small>Enter product name</small></p>
+          </li>
+
+          <li id="li_1_2" >
+            <label class="description" for="element_1_2">Product ID </label>
+            <div>
+              <input id="element_1_2" name="element_1_2" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_1_2"><small>Enter product id number</small></p>
+          </li>
+
+          <li id="li_1_3" >
+            <label class="description" for="element_1_3">Product Description </label>
+            <div>
+              <textarea id="element_1_3" name="element_1_3" class="element textarea medium"></textarea>
+            </div>
+            <p class="guidelines" id="guide_1_3"><small>Enter product description</small></p>
+          </li>
+
+          <li id="li_1_4" >
+            <label class="description" for="element_1_4">Total Supply </label>
+            <div>
+              <input id="element_1_4" name="element_1_4" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_1_4"><small>Enter total units manufactured</small></p>
+          </li>
+
+          <li id="li_1_5" >
+            <label class="description" for="element_1_5">Select Manufacturer </label>
+            <div>
+              <select class="element select medium" id="element_1_5" name="element_1_5">
+                <option value="" selected="selected"></option>
+                <option value="1" >First option</option>
+                <option value="2" >Second option</option>
+                <option value="3" >Third option</option>
+              </select>
+            </div>
+            <p class="guidelines" id="guide_1_5"><small>Select the 256 bit account address (in hex) of the manufacturer</small></p>
+          </li>
+
+          <li class="buttons">
+            <input type="hidden" name="form_id" value="111082" />
+            <input id="saveForm" class="button_text" type="submit" name="submit" value="Register New Product" />
+          </li>
+
+        </ul>
+
+      </form>
+    </div>
+
+  </body>
+</html>

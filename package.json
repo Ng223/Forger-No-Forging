@@ -1,0 +1,14 @@
+{
+  "name": "forger-no-forging",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "Nishant",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

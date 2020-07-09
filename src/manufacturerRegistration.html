@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+  <head>
+    <meta charset=”utf-8">
+    <meta name = "description" content = "This is the html file for registering a new manufacturer."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Registration</title>
+    <link rel="stylesheet" href="css/luxuryDapp.css">
+  </head>
+  <body>
+    <header>
+      <h1>Blockchain-based Anti-Counterfeit and Product Resale Solution</h1>
+      <nav id = "topNav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Owner
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content1">
+              <a href="productRegistration.html">Product Registration</a>
+              <a href="manufacturerRegistration.html" class = "active">Manufacturer Registration</a>
+              <a href="checkInfoOwner.html">Check Information</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">User
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content2">
+              <a href="transact.html">Transact</a>
+              <a href="checkInfoUser.html">Check Information</a>
+            </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href=>GitHub Repo</a>
+      </nav>
+    </header>
+
+    <div id="form2_container">
+      <form name="mM" class="appnitro"  method="post" onSubmit="return validateManufacturerForm();">
+        <div class="form_description">
+          <h2>Manufacturer Registration Form</h2>
+          <p>Fill in the information to register a new manufacturer.</p>
+        </div>
+
+        <ul>
+
+          <li id="li_2_1" >
+            <label class="description" for="element_2_1">Manufacturer Name:</label>
+            <div>
+              <input id="element_2_1" name="mName" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_2_1"><small>Enter the name of the manufacturer</small></p>
+          </li>
+
+          <li id="li_2_2" >
+            <label class="description" for="element_2_2">Manufacturer Location</label>
+            <div>
+              <input id="element_2_2" name="mLocation" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_2_2"><small>Enter the location of the manufacturer in "city,state,country" format</small></p>
+          </li>
+
+          <li id="li_2_3" >
+            <label class="description" for="element_2_3">Manufacturer Account Address</label>
+            <div>
+              <input id="element_2_3" name="mAccountAddress" class="element text medium" type="text" maxlength="255" value=""/>
+            </div>
+            <p class="guidelines" id="guide_2_3"><small>Enter the 256 bit account address (in hex) of the manufacturer</small></p>
+          </li>
+
+          <li class="buttons">
+            <button onclick="" type=”submit” data-dismiss=”modal” class=”btn btn-primary regManu”>Register New Manufacturer</button>
+          </li>
+
+        </ul>
+
+      </form>
+    </div>
+
+    <script src=”js/web3.min.js”></script>
+    <script src=”js/truffle-contract.js”></script>
+    <script src=”js/app.js”></script>
+  </body>
+</html>
